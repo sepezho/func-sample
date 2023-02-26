@@ -1,0 +1,6 @@
+;; to generate ops u can use https://crc32.online/
+
+;; errors
+const error::unknown_op = 101;
+const error::access_denied = 102;
+const error::insufficient_balance = 103;
