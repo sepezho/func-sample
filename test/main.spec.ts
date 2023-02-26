@@ -28,7 +28,15 @@ describe("sample test", () => {
       }) as any
     );
 
+    console.log(tx.type);
     console.log(tx.debugLogs);
     console.log(tx.gas_consumed);
+  });
+
+  it("run get method", async () => {
+    const tx = await contract.invokeGetMethod('get_test_number', []);
+    console.log(tx.type);
+    console.log(tx.gas_consumed);
+    console.log(tx.result[0]);
   });
 });

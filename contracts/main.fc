@@ -32,5 +32,6 @@
 }
 
 (int) get_test_number () method_id {
-  return 1;
+  ~dump(123);
+  return (1);
 }
